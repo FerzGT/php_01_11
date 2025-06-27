@@ -58,7 +58,7 @@ function printItem(&$items): void
 }
 
 //Определаяем функцию для получения номера операции
-function operationNumberFunc(&$items, &$operations, ): int
+function operationNumberFunc(&$items, &$operations): int
 {
     do {
         if (count($items)) {
@@ -83,7 +83,6 @@ function operationNumberFunc(&$items, &$operations, ): int
 
     } while (!array_key_exists($operationNumber, $operations));
 }
-;
 
 do {
     system('clear');    //    system('cls'); // windows
